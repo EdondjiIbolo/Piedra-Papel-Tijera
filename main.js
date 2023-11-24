@@ -51,11 +51,11 @@ choicesElements.forEach(element => {
                                 <div class="winner-container picked">
                                 <div>
                                     <p class="text__description--bold">You Picked</p>
-                                    <picture class="img-container"><img class="img img--${userChoice.toLocaleLowerCase()} user-winner" src="./images/icon-${userChoice}.svg" alt="${userChoice}"></picture>
+                                    <picture class="img-container"><img class="img img--${userChoice.toLocaleLowerCase()} user-winner" src="./images/icon-${userChoice.toLocaleLowerCase()}.svg" alt="${userChoice}"></picture>
                                 </div>
                                 <div>
                                     <p class="text__description--bold">The House Picked</p>
-                                    <picture class="img-container"><img class="img img--${laptopChoice.toLocaleLowerCase()}" src="./images/icon-${laptopChoice}.svg" alt="${laptopChoice}"></picture>
+                                    <picture class="img-container"><img class="img img--${laptopChoice.toLocaleLowerCase()}" src="./images/icon-${laptopChoice.toLocaleLowerCase()}.svg" alt="${laptopChoice}"></picture>
                                 </div>
                                 </div>
                             </section>`
@@ -94,12 +94,12 @@ choicesElements.forEach(element => {
            
             game.innerHTML = `<section class="game">
                                 <div class="winner-container">
-                                <picture class="img-container"><img class="img img--${userChoice.toLocaleLowerCase()} ${classWinner == 'Win' ? '' : 'user-winner'  }" src="./images/icon-${userChoice}.svg" alt="score-num"></picture>
+                                <picture class="img-container"><img class="img img--${userChoice.toLocaleLowerCase()} ${classWinner == 'Win' ? '' : 'user-winner'  }" src="./images/icon-${userChoice.toLocaleLowerCase()}.svg" alt="score-num"></picture>
                                 <section class="winner">
                                     <h2 class="text-title">${winLose}</h2>
                                     <button id="btn-play" class="btn btn--white">PLAY AGAIN</p>
                                 </section>
-                                <picture class="img-container"><img class="img img--${laptopChoice.toLocaleLowerCase()} ${classWinner == 'Win' ?  'user-winner' : '' }" src="./images/icon-${laptopChoice}.svg" alt="Paper"></picture>
+                                <picture class="img-container"><img class="img img--${laptopChoice.toLocaleLowerCase()} ${classWinner == 'Win' ?  'user-winner' : '' }" src="./images/icon-${laptopChoice.toLocaleLowerCase()}.svg" alt="Paper"></picture>
                                 </div>
                               <section>`
                               const btnPlay = document.getElementById('btn-play')
