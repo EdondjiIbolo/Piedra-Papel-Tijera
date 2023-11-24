@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Rock, Paper, Scissors</title>
+</head>
+<body>
+<main class="main-container">
+  <header class="header">
+    <h1 class="text-title">Rock, Paper, Scissors</h1>
+    <span class="score">
+      <p class="text__description">Score</p>
+      <p id="score" class="score-num">0</p>
+    </span>
+  </header>
+  <section class="game" id="game">
+    <picture class="img-container img-container--absolut"><img src="images/bg-triangle.svg" alt="bg-triangle"></picture>
+    <picture data-choice="Scissors" class="img-container"><img class="img img--scissors" src="images/icon-scissors.svg" alt="score-num"></picture>
+    <picture data-choice="Paper" class="img-container"><img class="img img--paper" src="images/icon-paper.svg" alt="Paper"></picture>
+    <picture data-choice="Rock" class="img-container"><img class="img img--rock" src="images/icon-rock.svg" alt="Rock"></picture>
+  </section>
+<!-- end game UI -->
+<!-- <section class="game">
+  <div class="winner-container">
+    <picture class="img-container"><img class="img img--blue user-winner" src="images/icon-scissors.svg" alt="score-num"></picture>
+    <section class="winner">
+      <h2 class="text-title">You win</h2>
+      <button id="btn-play" class="btn btn--white">PLAY AGAIN</p>
+    </section>
+    <picture class="img-container"><img class="img img--red" src="images/icon-paper.svg" alt="Paper"></picture>
+  </div>
+  
+</section> -->
+<!-- <section class="game">
+  <div class="winner-container picked">
+    <div>
+      <p class="text__description--bold">You Picked</p>
+      <picture class="img-container"><img class="img img--blue user-winner" src="images/icon-scissors.svg" alt="score-num"></picture>
+    </div>
+    <div>
+      <p class="text__description--bold">The House Picked</p>
+      <picture class="img-container"><img class="img img--red" src="images/icon-paper.svg" alt="Paper"></picture>
+    </div>
+  </div>
+</section> -->
+<!--  -->
+<div id="loader" class="modal-container loader-inactive">
+  <span  class="loader "></span>
+</div>
+  <div class="rule-container">
+    <button id="btn-rule" class="btn">Rules</button>
+  </div>
+
+  <section class="modal-container active" id="modal">
+    <div class="modal">
+      <header class="modal-header">
+        <h2 class="text-title">Rules</h2>
+        <div class="toggle-modal" id="toggle-modal">
+          <img src="images/icon-close.svg" alt="icon-close">
+        </div>
+      </header>
+      <section class="game">
+        <picture class="img-container--model"><img class="modal-img" src="images/image-rules.svg" alt="score-num"></picture>
+      </section> 
+    </div>
+  </section>
+</main>
+
+  
+<script src="main.js" ></script>
+</body>
+</html>
